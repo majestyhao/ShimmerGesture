@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myshimmerapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.ucdavis.myshimmerapp.activities.MainActivity"
+            android:label="@string/main_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.ucdavis.myshimmerapp.activities.BTDeviceListActivity"
+            android:label="@string/select_device"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="edu.ucdavis.myshimmerapp.activities.RecogIntermittentActivity"
+            android:label="@string/windowed_title"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="edu.ucdavis.myshimmerapp.activities.RecogContinousActivity"
+            android:label="@string/continous_title"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="edu.ucdavis.myshimmerapp.activities.TrainingActivity"
+            android:label="@string/training_title"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="edu.ucdavis.myshimmerapp.activities.SettingsActivity"
+            android:label="@string/settings_title"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <service
+            android:name="edu.ucdavis.myshimmerapp.services.MyShimmerService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

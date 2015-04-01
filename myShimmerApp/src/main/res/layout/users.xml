@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ExistingUsers"
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="0.5"
+    	android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ExistingUserText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_grey"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/users"
+            android:textColor="#fff" />
+
+    	<ListView android:id="@+id/existing_users"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:stackFromBottom="false"
+	        android:minHeight="20dp"
+	    />
+        
+    </LinearLayout>
+    	
+    
+    <LinearLayout 
+        android:id="@+id/new_use_button"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="bottom"
+    	android:gravity="bottom"
+    	android:orientation="vertical">
+    	
+        <Button 
+            android:id="@+id/button_scan"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="@string/new_user"
+	        android:layout_margin="5dp"
+    	/>
+        
+    </LinearLayout>
+
+</LinearLayout>

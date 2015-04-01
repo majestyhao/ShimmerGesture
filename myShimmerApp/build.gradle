@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "com.example.myshimmerapp"
+        minSdkVersion 10
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':shimmerDriver')
+    compile project(':shimmerAndroidInstrumentDriver')
+    compile 'com.android.support:appcompat-v7:21.0.2'
+    compile files('libs/commons-math3-3.4.1.jar')
+    compile files('libs/weka.jar')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/SampleRate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_sample_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_grey"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/setting_title_sample_rate"
+            android:textColor="#fff" />
+
+        <ListView
+            android:id="@+id/sampling_rate_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Gesture_Type"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_gesture_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_grey"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/setting_title_recog_mode"
+            android:textColor="#fff" />
+
+        <ListView
+            android:id="@+id/gesture_type_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="@string/button_done" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="@string/button_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

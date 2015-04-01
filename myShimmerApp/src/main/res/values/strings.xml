@@ -1,0 +1,51 @@
+<resources>
+
+    <string name="app_name">SmartWatch Gesture Recognition</string>
+    <string name="main_title">SmartWatch Gesture Recognition</string>
+    <string name="settings_title">Settings</string>
+    <string name="windowed_title">SmartWatch Gesture Recognition</string>
+    <string name="continous_title">SmartWatch Gesture Recognition</string>
+    <string name="training_title">SmartWatch Gesture Training</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_new_devices">New Devices</string>
+    
+    <string name="none_paired">No Device Has Been Paried</string>
+    <string name="scanning">Scanning</string>
+    <string name="select_device">Select Device</string>
+    <string name="no_device_found">No Device Found</string>
+    <string name="device_addr">Device address: </string>
+    <string name="device_state">Device state: </string>
+    
+    <string name="users">Users</string>
+    <string name="new_user">New User</string>
+    
+    <string name="stat_connecting">Connecting</string>
+    <string name="stat_connected">Connected</string>
+    <string name="stat_disconnected">Disconnected</string>
+    
+    <string name="button_devices">Devices</string>
+    <string name="button_scan">Scan</string>
+    <string name="button_settings">Settings</string>
+    <string name="button_connect">Connect</string>
+    <string name="button_disconnect">Disconnect</string>
+    <string name="button_startstreaming">Start Streaming</string>
+    <string name="button_stopstreaming">Stop Streaming</string>
+    <string name="button_accl">accl</string>
+    <string name="button_gyro">gyro</string>
+    <string name="button_startrecog">Start Recognition</string>
+    <string name="button_starttraining">Start Traning</string>
+    <string name="button_users">Users</string>
+    
+    <string name="button_done">Done</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_start">Start</string>
+    <string name="button_stop">Stop</string>
+    <string name="button_build">Build</string>
+    
+    <string name="setting_title">Settings</string>
+    <string name="setting_title_sample_rate">Sample Rate</string>
+    <string name="setting_title_gesture_type">Gesture Type</string>
+    <string name="setting_title_ml_algo">ML Algorithm</string>
+    <string name="setting_title_recog_mode">Recog Mode</string>
+
+</resources>

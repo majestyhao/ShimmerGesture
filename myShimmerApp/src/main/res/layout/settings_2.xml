@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/SampleRate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_sample_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_grey"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/setting_title_sample_rate"
+            android:textColor="#fff" />
+
+        <ScrollView
+            android:id="@+id/scrollview_sampling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <RadioGroup
+                android:id="@+id/sample_rate_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Gesture_Type"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_gesture_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_grey"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/setting_title_gesture_type"
+            android:textColor="#fff" />
+
+        <ScrollView
+            android:id="@+id/scrollview_gesture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <RadioGroup
+                android:id="@+id/gesture_type_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ML_Algo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_ml_algo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_grey"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/setting_title_ml_algo"
+            android:textColor="#fff" />
+
+        <ScrollView
+            android:id="@+id/scrollview_ml_algo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <RadioGroup
+                android:id="@+id/ml_algo_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Recog_Mode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_recog_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shimmer_grey"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/setting_title_recog_mode"
+            android:textColor="#fff" />
+
+        <ScrollView
+            android:id="@+id/scrollview_recogmode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <RadioGroup
+                android:id="@+id/recog_mode_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <!--
+             <EditText
+            android:id="@+id/big_window_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/small_window_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1" >
+        </EditText>        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="@string/button_done" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="@string/button_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

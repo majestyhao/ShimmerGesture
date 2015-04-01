@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyShimmerApp2.iml" filepath="$PROJECT_DIR$/MyShimmerApp2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myShimmerApp/myShimmerApp.iml" filepath="$PROJECT_DIR$/myShimmerApp/myShimmerApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shimmerAndroidInstrumentDriver/shimmerAndroidInstrumentDriver.iml" filepath="$PROJECT_DIR$/shimmerAndroidInstrumentDriver/shimmerAndroidInstrumentDriver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shimmerDriver/shimmerDriver.iml" filepath="$PROJECT_DIR$/shimmerDriver/shimmerDriver.iml" />
+    </modules>
+  </component>
+</project>
+
